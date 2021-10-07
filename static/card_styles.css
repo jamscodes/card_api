@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Page styles */
+
+body {
+    background-color: lightgrey;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* End page styles */
+
+/* Card styles */
+
+.card {
+    display: flex;
+    width: 300px;
+    height: calc(300px * 1.4);
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: solid 2px #000;
+    border-radius: 2%;
+}
+
+.card-dark {
+    color: #000;
+}
+
+.card-accent {
+    color: red;
+}
+
+.card-pip {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.card-pip-name, .card-pip-suit {
+    font-size: 200%;
+}
+
+.card-center-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card-center-icon .card-pip-suit {
+    font-size: 1000%;
+}
+
+.card-pip:last-of-type {
+    transform: rotate(180deg);
+}
+
+/* End page styles */
+
+/* Utility classes */
+
+.hide {
+    display: none;
+}
+
+/* End utility classes */
