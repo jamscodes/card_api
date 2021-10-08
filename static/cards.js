@@ -1,5 +1,6 @@
 export class Deck {
-    constructor(suits = ['Spades', 'Hearts', 'Clubs', 'Diamonds'], cardValues = ['A','2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']) {
+    constructor(suits = ['Spades', 'Hearts', 'Clubs', 'Diamonds'],
+    cardValues = ['A','2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']) {
         this.deck = []
         suits.map(
             suit => cardValues.map(
@@ -50,7 +51,7 @@ export class Card {
 
         // Will return an HTML node for a card
         return document.createRange().createContextualFragment(`
-        <div class="card hide">
+        <div class="card">
             <div class="card-pip ${(this.suit == 'Spades' || this.suit == 'Clubs' ? 
             'card-dark' : 'card-accent')}">
                 <p class="card-pip-name">${this.name}</p>
